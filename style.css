@@ -17,3 +17,22 @@ nav ul {
     display: flex;
     gap: 20px;
 }
+
+body {
+    background-color:bisque
+}
+h2 {
+    margin-top: 60px
+}
+
+.profile-photo {
+    width: 200px;
+}
+
+.dashboard-table {
+    width: 75%;
+}
+
+th {
+    text-align: left;
+}
