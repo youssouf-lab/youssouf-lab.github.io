@@ -1,52 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <title>Wie ben ik?</title>
 
-<body>
-    <nav>
+    <body>
+      <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Profiel</a></li>
-            <li><a href="why-it.html">Waarom IT?</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="profile.html">Profiel</a></li>
+          <li><a href="why-it.html">Waarom IT?</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li class="dropdown">
+            <a href="blog.html">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a href="blog/direction.html">Direction</a></li>
+              <li><a href="blog/goals.html">Goals</a></li>
+              <li>
+                <a href="blog/programming-experience.html"
+                  >Programming experience</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
 
         <header>
-            <h1>Wie ben ik?</h1>
-            <p>Op deze pagina vertel ik meer over wie ik ben, mijn hobbies en achtergrond</p>
+          <h1>Wie ben ik?</h1>
+          <p>
+            Op deze pagina vertel ik meer over wie ik ben, mijn hobbies en
+            achtergrond
+          </p>
         </header>
         <div>
-            <main>
+          <main>
+            <article>
+              <section>
                 <h2>Over mij</h2>
                 <p>Mijn naam is Youssouf en ik ben 20 jaar oud.</p>
 
                 <h2>Mijn hobbies</h2>
                 <ol>
-                    <li>voetballen</li>
-                    <li>spelletjes</li>
-                    <li>wandelen</li>
+                  <li>voetballen</li>
+                  <li>spelletjes</li>
+                  <li>wandelen</li>
                 </ol>
-                <img class="profile-photo" src="img/voetbal.jpg.jpg" alt="Ik tijdens het voetballen">
-                <img class="profile-photo" src="img/wandelng.jpg.jpg" alt="Wandeling aan het strand">
+                <img
+                  class="profile-photo"
+                  src="img/voetbal.jpg.jpg"
+                  alt="Ik tijdens het voetballen"
+                />
+                <img
+                  class="profile-photo"
+                  src="img/wandelng.jpg.jpg"
+                  alt="Wandeling aan het strand"
+                />
                 <h2>Mijn achtergrond</h2>
                 <p>Dit ga ik later uitbreiden.</p>
 
                 <h2>handige links</h2>
-                <a href="https://github.com/youssouf-lab/youssouf-lab.github.io" target="_blank">Github</a>
-                <a href="https://www.instagram.com/yh.228_/" target="_blank">Instagram</a>
-            </main>
-            <aside>
-                <h2>Sidebar</h2>
-                <p>Dit is de sidebar van de profielpagina.</p>
-            </aside>
+                <a
+                  href="https://github.com/youssouf-lab/youssouf-lab.github.io"
+                  target="_blank"
+                  >Github</a
+                >
+                <a href="https://www.instagram.com/yh.228_/" target="_blank"
+                  >Instagram</a
+                >
+              </section>
+            </article>
+          </main>
+          <aside>
+            <h2>Sidebar</h2>
+            <p>Dit is de sidebar van de profielpagina.</p>
+          </aside>
         </div>
         <footer>
-            <address>
-                <p>Contact: <a href="mailto:youssouf@example.com">youssouf@example.com</a></p>
-            </address>
+          <address>
+            <p>
+              Contact:
+              <a href="mailto:youssouf@example.com">youssouf@example.com</a>
+            </p>
+          </address>
         </footer>
-</body>
+      </nav>
+    </body>
+  </head>
+</html>

@@ -1,36 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Blog</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profiel</a></li>
-                <li><a href="why-it.html">Waarom IT?</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-       <header>
-        <h1>Blog</h1>
-         </header>
-         <div>
-            <main>
-                <h2>Mijn Blog</h2>
-                <p>Welkom op mijn blog. Hier deel ik mijn gedachten en ervaringen.</p>
-            </main>
-            <aside>
-                <h2>Sidebar</h2>
-                <p>Dit is de sidebar van mijn blog.</p>
-            </aside>
-         </div>
-         <footer>
-            <address>
-                <p>Contact: <a href="mailto:youssouf@example.com">youssouf@example.com</a></p>
-            </address>
-        </footer>
-    </body>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profiel</a></li>
+        <li><a href="why-it.html">Waarom IT?</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="dropdown">
+          <a class="active" href="blog.html">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog/direction.html">Direction</a></li>
+            <li><a href="blog/goals.html">Goals</a></li>
+            <li>
+              <a href="blog/programming-experience.html"
+                >Programming experience</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Mijn Blog</h1>
+    </header>
+
+    <div>
+      <main>
+        <article>
+          <section>
+            <h2>Persoonlijke SWOT-analyse</h2>
+            <p>
+              Een korte reflectie op mijn sterke en zwakke punten, kansen en
+              valkuilen
+            </p>
+            <a href="blog/goals.html">Lees meer</a>
+          </section>
+          <section>
+            <h2>Programmeer ervaring</h2>
+            <p>
+              Mijn eerste ervaringen met programmeren en wat ik tot nu toe heb
+              geleerd.
+            </p>
+            <a href="blog/programming-experience.html">Lees meer</a>
+          </section>
+          <section>
+            <h2>Direction</h2>
+            <p>
+              Mijn kijk op de toekomst en hoe ik wil ontdekken welke richting
+              binnen ICT bij mij past
+            </p>
+            <a href="blog/direction.html">Lees meer</a>
+          </section>
+        </article>
+      </main>
+
+      <aside>
+        <h2>Sidebar</h2>
+        <p>Dit is mijn sidebar.</p>
+      </aside>
+    </div>
+
+    <footer>
+      <address>
+        <p>
+          Contact:
+          <a href="mailto:youssouf@example.com">youssouf@example.com</a>
+        </p>
+      </address>
+    </footer>
+  </body>
 </html>

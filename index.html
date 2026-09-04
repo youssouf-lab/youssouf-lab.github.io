@@ -1,44 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
+  <head>
     <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Profiel</a></li>
-            <li><a href="why-it.html">Waarom IT?</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="profile.html">Profiel</a></li>
+        <li><a href="why-it.html">Waarom IT?</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog/direction.html">Direction</a></li>
+            <li><a href="blog/goals.html">Goals</a></li>
+            <li>
+              <a href="blog/programming-experience.html"
+                >Programming experience</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
-    <header>
-        <h1>Welkom op mijn website</h1>
-    </header>
-    <div>
-        <main>
-            <p>Dit is de homepage van Youssouf.</p>
+    <main>
+      <article>
+        <section>
+          <h1>Welkom op mijn website</h1>
+          <p>
+            Mijn naam is Youssouf en dit is mijn persoonlijke showcase website.
+          </p>
+        </section>
 
-        </main>
-        <aside>
-            <p>Dit is de sidebar.</p>
-        </aside>
-    </div>
+        <section>
+          <h2>Mijn opleiding</h2>
+          <p>
+            Ik volg de opleiding ICT bij HZ University of Applied Sciences in
+            Middelburg. Voor deze opleiding heb ik Sociaal werk gedaan op het
+            Mbo. ICT is een nieuwe richting voor mij en tijdens de opleiding wil
+            ik ontdekken welke richtingen binnen ICT bij mij passen.
+          </p>
+          <img class="home-photo" src="img/school-gebouw.jpg.jpg" />
+        </section>
+
+        <section>
+          <h2>Op deze website</h2>
+
+          <ul>
+            <li>Meer informatie over mij</li>
+            <li>Waarom ik ICT heb gekozen</li>
+            <li>Mijn studie voortgang</li>
+            <li>Mijn blog</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>Dit is de sidebar.</p>
+    </aside>
+
     <footer>
-        <address>
-            <p>Contact: <a href="mailto:youssouf@example.com">youssouf@example.com</a></p>
-        </address>
-
-
-
+      <address>
+        <p>
+          Contact:
+          <a href="mailto:youssouf@example.com">youssouf@example.com</a>
+        </p>
+      </address>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

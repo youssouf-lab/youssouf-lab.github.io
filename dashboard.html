@@ -1,122 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
+  <head>
     <title>Personal Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Profiel</a></li>
-            <li><a href="why-it.html">Waarom IT?</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profiel</a></li>
+        <li><a href="why-it.html">Waarom IT?</a></li>
+        <li><a class="active" href="dashboard.html">Dashboard</a></li>
+        <li class="dropdown">
+          <a href="blog.html">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog/direction.html">Direction</a></li>
+            <li><a href="blog/goals.html">Goals</a></li>
+            <li>
+              <a href="blog/programming-experience.html"
+                >Programming experience</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-    <header>
-        <h1>Personal Dashboard</h1>
-    </header>
-    <div>
-        <main>
-            <h2>Dashboard</h2>
-            <table class="dashboard-table">
-                <tr>
-                    <th>Quarter</th>
-                    <th>Course</th>
-                    <th>EC</th>
-                    <th>Exam</th>
-                    <th>Grade</th>
-                </tr>
-                <tr>
-                    <td rowspan="3">Quarter 1</td>
-                    <td>PCO</td>
-                    <td>5</td>
-                    <td>assignment</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>PBA</td>
-                    <td>5</td>
-                    <td>assignment</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>CSB</td>
-                    <td>5</td>
-                    <td>written</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Quarter 2</td>
-                    <td>OOP</td>
-                    <td>5</td>
-                    <td>assignment</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>ATM</td>
-                    <td>5</td>
-                    <td>?</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>PFP</td>
-                    <td>5</td>
-                    <td>Portfolio</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Quarter 3</td>
-                    <td>SEF</td>
-                    <td>5</td>
-                    <td>?</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>FOD</td>
-                    <td>5</td>
-                    <td>?</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>RMO</td>
-                    <td>5</td>
-                    <td>?</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Quarter 4</td>
-                    <td>WED</td>
-                    <td>5</td>
-                    <td>assignment</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>DSB</td>
-                    <td>5</td>
-                    <td>?</td>
-                    <td>n.v.t</td>
-                </tr>
-                <tr>
-                    <td>ACS</td>
-                    <td>5</td>
-                    <td>Portfolio</td>
-                    <td>n.v.t</td>
-            </table>
-        </main>
-        <aside>
-            <h2>Sidebar</h2>
-            <p>Dit is de sidebar van het dashboard.</p>
-        </aside>
-    </div>
-    <footer>
-        <address>
-            <p>Contact: <a href="mailto:youssouf@example.com">youssouf@example.com</a></p>
-        </address>
-    </footer>
-</body>
 
+    <header>
+      <h1>Personal Dashboard</h1>
+    </header>
+
+    <div>
+      <main>
+        <h2>Dashboard</h2>
+        <table class="dashboard-table">
+          <tr>
+            <th>Quarter</th>
+            <th>Course</th>
+            <th>EC</th>
+            <th>Exam</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td rowspan="3">Quarter 1</td>
+            <td>PCO</td>
+            <td>5</td>
+            <td class="not-taken">assignment</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>PBA</td>
+            <td>5</td>
+            <td class="not-taken">assignment</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>CSB</td>
+            <td>5</td>
+            <td class="not-taken">written</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Quarter 2</td>
+            <td>OOP</td>
+            <td>5</td>
+            <td class="not-taken">assignment</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>ATM</td>
+            <td>5</td>
+            <td class="not-taken">?</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>PFP</td>
+            <td>5</td>
+            <td class="not-taken">portfolio</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Quarter 3</td>
+            <td>SEF</td>
+            <td>5</td>
+            <td class="not-taken">?</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>FOD</td>
+            <td>5</td>
+            <td class="not-taken">?</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>RMO</td>
+            <td>5</td>
+            <td class="not-taken">?</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Quarter 4</td>
+            <td>WED</td>
+            <td>5</td>
+            <td class="not-taken">assignment</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>DSB</td>
+            <td>5</td>
+            <td class="not-taken">?</td>
+            <td>n.v.t</td>
+          </tr>
+          <tr>
+            <td>ACS</td>
+            <td>5</td>
+            <td class="not-taken">Portfolio</td>
+            <td>n.v.t</td>
+          </tr>
+        </table>
+      </main>
+
+      <aside>
+        <h2>studievoortgang</h2>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+          <div class="study-boundary"></div>
+        </div>
+        <p>Behaalde EC:0/60.</p>
+        <p>Studie advies: 45 EC</p>
+      </aside>
+    </div>
+
+    <footer>
+      <address>
+        <p>
+          Contact:
+          <a href="mailto:youssouf@example.com">youssouf@example.com</a>
+        </p>
+      </address>
+    </footer>
+  </body>
 </html>
